@@ -182,39 +182,47 @@ html,body{
         &#page3{
           h2{
             display: block;
+            -webkit-animation: rotateInDownLeft 1s linear 1 both;
             animation: rotateInDownLeft 1s linear 1 both;
           }
           span{
             display: block;
+            -webkit-animation: bounceInLeft 1s linear 1 both;
             animation: bounceInLeft 1s linear 1 both;
           }
           span:nth-of-type(5){
+             -webkit-animation: bounceInRight 2s linear 1 both;
              animation: bounceInRight 2s linear 1 both;
            }
           span:nth-of-type(6){
+            -webkit-animation: bounceInLeft 2s linear 1 both;
             animation: bounceInLeft 2s linear 1 both;
           }
           .skill1:nth-of-type(5){
             .skillInner{
               width: 90%;
+              -webkit-transition: width 1s linear 1s;
               transition: width 1s linear 1s;
             }
           }
           .skill1:nth-of-type(2){
             .skillInner{
               width: 90%;
+              -webkit-transition: width 1s linear 1s;
               transition: width 1s linear 1s;
             }
           }
           .skill1:nth-of-type(3){
             .skillInner{
               width: 100%;
+              -webkit-transition: width 1s linear 1s;
               transition: width 1s linear 1s;
             }
           }
           .skill1:nth-of-type(4){
             .skillInner{
               width: 90%;
+              -webkit-transition: width 1s linear 1s;
               transition: width 1s linear 1s;
             }
           }
@@ -735,22 +743,10 @@ html,body{
   left: 2.8rem;
   bottom: 1rem;
   opacity: 0;
+  background: url("../images/turnUp.png") no-repeat;
+  background-size: 100% 100%;
   -webkit-animation: move5 1s ease infinite both;
   animation: move5 1s ease infinite both;
-  div:nth-child(1){
-    position: absolute;
-    left: 0;
-    top:0;
-    border: 30px solid transparent;
-    border-bottom: 30px solid white;
-  }
-  div:nth-child(2){
-    position: absolute;
-    left: 0;
-    top: 10px;
-    border: 30px solid transparent;
-    border-bottom: 30px solid #eee;
-  }
 }
 .music{
   width: 0.6rem;
